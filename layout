@@ -1,0 +1,47 @@
+parts {
+    device {
+        display {
+            x 0
+            y 0
+            width 1080
+            height 2160
+        }
+    }
+
+    portrait {
+        background {
+            image background.webp
+        }
+
+        foreground {
+            mask corners.webp
+        }
+
+        buttons {
+            back {
+                x 460
+                y 2329
+                image back.webp
+            }
+        }
+    }
+}
+
+layouts {
+    main {
+        width 1178
+        height 2460
+
+        part1 {
+            name portrait
+            x 0
+            y 0
+        }
+
+        part2 {
+            name device
+            x 43
+            y 138
+        }
+    }
+}
